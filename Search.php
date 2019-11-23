@@ -88,6 +88,8 @@ while ($row = mysqli_fetch_array($sel)) {
    </tr>\n";
 
 }
+ $con->close();
+ $con1->close();
 ?>
 </div>
 </table>
