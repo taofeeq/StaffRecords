@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset=utf-8 />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title> Staff Details </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">"></script>
+<link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+<link rel="stylesheet" href="assets/css/animate.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/media-queries.css">
+<link rel="stylesheet" href="styling.css">
+<script src ="keys.js"></script>
+</head>
+
+<body >
+<header >
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-nav " style="background-color: #444">
+        <a class="navbar-nav" href="Home.html"><img src="assets/img/head.png" alt="logo-header" data-at2x="assets/img/head.png"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+
+      <a href="Search.php">  <span class="glyphicon glyphicon-search"></span><i class="fas fa-search text-white ml-1 img" aria-hidden="true"></i></a>
+      </div>
+    </nav>
+</header>
+<div class="section-1-container section-container">
+<div class="container">
+<div class="row pt-4">
+<div class="col text-center">
+<h1> Update Staff Records </h1>
+<div class="container">
+<form  method="post"  action="data.php" enctype="multipart/form-data" onsubmit="setTimeout(function(){ window.location.reload(); }, 200)">
+<label>First Name:
+<input type="text" id = "firstname" name="firstname"/><br/></label>
+<label>Last Name: 
+<input type="text" id = "lastname" name="lastname"/><br/></label>
+<label>Date of Birth: 
+<input type="date" id = "dob" name="dob"/><br/></label>
+<label>Staff ID: 
+<input type="text" id = "staff_no" name="staff_no"/><br/></label>
+<label>E-mail:
+<input type="text" id = "email" name="email"/><br/></label> 
+<label>Phone Number:
+<input type="text" id = "phone_no" name="phone_no"/><br/></label> 
+<label>Title Held:
+<input type="text" id = "title_pos" name="title_pos"/><br/></label> 
+<label>Start Date: 
+<input type="date" id = "start_date" name="start_date"/><br/></label>
+<label>Salary: 
+<input type="text" id = "salary" name="salary"/><br/></label>
+<label>Date of Last Payment:
+<input type="date" id = "pay_date" name="pay_date"/><br/></label> 
+<label>Present Department: 
+<input type="text" id = "dept_now" name="dept_now"/><br/></label>
+<label>Department ID: 
+<input type="text" id = "dept_no" name="dept_no"/><br/></label>
+<label>Start Date at Department:
+<input type="date" id = "dept_startdate" name="dept_startdate"/><br/></label> 
+<button type="submit" name="submit" id= "submitLink" class= "btn btn-primary savebtn" onclick="alert('Records Updated')">Save Records</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+        	<div class="footer-top">
+		        <div class="container">
+		        	<div class="row">
+		        		<div class="col-md-6 col-lg-3 footer-about wow fadeInUp">
+		        			<img class="logo-footer" src="assets/img/logo.png" alt="logo-footer" data-at2x="assets/img/logo.png"> <h3>Speed Shift Media </h3> </img>
+		        			<p>
+		        				We are a young company always looking for new and creative ideas to help you with our products in your everyday work.
+		        			</p>
+		        			<p><a href="#">Our Team</a></p>
+	                    </div>
+		        		<div class="col-md-4 col-lg-4 offset-lg-1 footer-contact wow fadeInDown">
+		        			<h3>Contact</h3>
+		                	<p><i class="fas fa-map-marker-alt"></i> Via Rossini 10, 10136 Turin Italy</p>
+		                	<p><i class="fas fa-phone"></i> Phone: (0039) 333 12 68 347</p>
+		                	<p><i class="fas fa-envelope"></i> Email: <a href="mailto:hello@domain.com">hello@domain.com</a></p>
+		                	<p><i class="fab fa-skype"></i> Skype: you_online</p>
+	                    </div>
+	                    <div class="col-md-4 col-lg-3 footer-social wow fadeInUp">
+	                    	<h3>Follow us</h3>
+	                    	<p>
+	                    		<a href="#"><i class="fab fa-facebook"></i></a> 
+								<a href="#"><i class="fab fa-twitter"></i></a> 
+								<a href="#"><i class="fab fa-google-plus-g"></i></a> 
+								<a href="#"><i class="fab fa-instagram"></i></a> 
+								<a href="#"><i class="fab fa-pinterest"></i></a>
+	                    	</p>
+	                    </div>
+		            </div>
+		        </div>
+	        </div>
+	        <div class="footer-bottom">
+	        	<div class="container">
+	        		<div class="row">
+	           			<div class="col-md-11 footer-copyright">
+	                    	<p>&copy;<a href="Home.html">2019 Speed Shift Media,LLC. All rights reserved.</a></p>
+	                    </div>
+	                    </div>
+	           		</div>
+	        	</div>
+	        </div>
+        </footer>
+
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/retina-1.1.0.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+</body>
+</html>
