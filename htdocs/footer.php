@@ -1,5 +1,5 @@
-<footer>
-<nav class="navbar navbar-nav fixed-bottom footer1">
+<footer class="fixed-bottom">
+<nav class="navbar navbar-nav  footer1">
 <div class="container">
     <div class="col text-center">
   <p class=" footer-copyright a"><a class="footer-block" href="Home.html">&copy;2019 Speed Sound Medium,LLC. All rights reserved. </a></p>
