@@ -60,34 +60,34 @@
 <div class="container">
 <h1> Update Staff Records </h1>
 <div class="col text-center">
-<form  method="post"  action="data.php" enctype="multipart/form-data" onsubmit="setTimeout(function(){ window.location.reload(); }, 200)">
+<form  method="post"  action="data.php" enctype="multipart/form-data" onsubmit=" setTimeout(function(){ window.location.reload(); }, 200)">
 <label>First Name:
-<input type="text" id = "firstname" name="firstname"/><br/></label>
+<input type="text" id = "firstname" name="firstname" required placeholder="Enter a valid First name"><br/></label>
 <label>Last Name: 
-<input type="text" id = "lastname" name="lastname"/><br/></label>
+<input type="text" id = "lastname" name="lastname" required placeholder="Enter a valid Last Name"><br/></label>
 <label>Date of Birth: 
-<input type="date" id = "dob" name="dob"/><br/></label>
+<input type="date" id = "dob" name="dob" required pattern="\d{1,2}/\d{1,2}/\d{4}"><br/></label>
 <label>Staff ID: 
-<input type="text" id = "staff_no" name="staff_no"/><br/></label>
+<input type="text" id = "staff_no" name="staff_no" required placeholder="Enter Staff ID"><br/></label>
 <label>E-mail:
-<input type="text" id = "email" name="email"/><br/></label> 
+<input type="text" id = "email" name="email" required placeholder="JohnDoe@domain.com" ><br/></label> 
 <label>Phone Number:
-<input type="text" id = "phone_no" name="phone_no"/><br/></label> 
+<input type="text" id = "phone_no" name="phone_no" required placeholder="123-456-7890"><br/></label> 
 <label>Title Held:
-<input type="text" id = "title_pos" name="title_pos"/><br/></label> 
+<input type="text" id = "title_pos" name="title_pos"required placeholder="Enter Title Here"><br/></label> 
 <label>Start Date: 
-<input type="date" id = "start_date" name="start_date"/><br/></label>
+<input type="date" id = "start_date" name="start_date" required pattern="\d{1,2}/\d{1,2}/\d{4}"><br/></label>
 <label>Salary: 
-<input type="text" id = "salary" name="salary"/><br/></label>
+<input type="text" id = "salary" name="salary" required placeholder="Salary Amount"><br/></label>
 <label>Date of Last Payment:
-<input type="date" id = "pay_date" name="pay_date"/><br/></label> 
+<input type="date" id = "pay_date" name="pay_date" required pattern="\d{1,2}/\d{1,2}/\d{4}"><br/></label> 
 <label>Present Department: 
-<input type="text" id = "dept_now" name="dept_now"/><br/></label>
+<input type="text" id = "dept_now" name="dept_now" required placeholder="Department Here"><br/></label>
 <label>Department ID: 
-<input type="text" id = "dept_no" name="dept_no"/><br/></label>
+<input type="text" id = "dept_no" name="dept_no" required placeholder="Enter Dept ID"><br ></label>
 <label>Start Date at Department:
-<input type="date" id = "dept_startdate" name="dept_startdate"/><br/></label> 
-<button type="submit" name="submit" id= "submitLink" class= "btn btn-primary savebtn" onclick="alert('Records Updated')">Save Records</button>
+<input type="date" id = "dept_startdate" name="dept_startdate" required pattern="\d{1,2}/\d{1,2}/\d{4}"><br/></label> 
+<button type="submit" name="submit" id= "submitLink" class= "btn btn-primary savebtn" ">Save Records</button>
 </form>
 </div>
 </div>
