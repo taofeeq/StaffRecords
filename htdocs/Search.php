@@ -10,9 +10,9 @@ include_once("header.php");
 <h1> View Staff Records </h1>
 <div class="col text-center">
 <form  method="post"  action="Search.php" enctype="multipart/form-data" onsubmit="setTimeout(function(){ window.location.reload(); }, 400)">
-<label> Staff ID:<input type="text" id = "staff_no" name="staff_no"/></label>
-<label> Last Name:<input type="text" id = "name" name="name"/></label>
-<label> Email: <input type="text" id="email" name="email"/></label>
+<label> Staff ID:<input type="text" id = "staff_no" name="staff_no" required placeholder="Enter Staff ID"></label>
+<label> Last Name:<input type="text" id = "name" name="name" required placeholder="Enter a valid Last Name"></label>
+<label> Email: <input type="text" id="email" name="email" required placeholder="JohnDoe@domain.com"></label>
 <button type="submit" name="submit" id= "submitLink" class= "btn btn-primary savebtn">Search ID</button>
 </form>
 </div>
