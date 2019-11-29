@@ -122,7 +122,7 @@ $sqlf="INSERT INTO emp_Dept(emp_no,dept_no,from_date,to_date)VALUES('$staff_no',
 if($conn2->query($sqlf) === true){
     echo "Records inserted successfully.";
 } else{
-    echo "ERROR: Could not able to execute $sqlc. " . $conn->error;
+    echo "ERROR: Could not able to execute $sqlf. " . $conn->error;
 }
 $conn->close();
 $conn1->close();
